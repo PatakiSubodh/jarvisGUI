@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J.A.R.V.I.S</title>
+    <link rel="stylesheet" href="main.css" type="text/css" media="screen">
+
+    <link rel="icon" href="./icon_color_noBackground_jarvis.png" type="image/x-icon">
+
+    <!-- fonts UBUNTU and KANIT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;0,900;1,400&family=Ubuntu:ital,wght@0,500;1,400;1,500&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <audio src="./JARVIS.mp3" autoplay></audio>
+                                    
+    <div id="overlay">
+        <!-- 
+            -- if you commentOut the ( class= "textOutlineFont") then use this. -- 
+            !!!!!IMPORTANT MSG !!!!!!
+            image background has been burnt, so if you wanna see it the comment-out id="overlay" or change the color of id="overlay" to white  
+            
+            ********  NOT DEFAULT
+            ( CSS for font as well as for jarvis img ) ->
+            .container{
+                position: absolute;
+                top: 50%;
+                left: 70%;
+                transform: translate(-50%, -50%);
+            }
+            ********
+        -->
+        
+        <!-- <div class="imgJARVIS">
+                <img src="./jarvis_sample2.jpg" alt="jarvis_sample">
+        </div> -->
+    
+        <!-- <div class="textOutlineFont">
+            <p>JARVIS</p>
+        </div> -->
+
+        <!-- (commented font as well as jarvis img)added ironman heart image for GUI -->
+        <div class="backgroundImgGUI">
+            <img src="/Jarvis/JARVIS_background_for_GUI.jpg" alt="" height="700px" width="1365px">
+            <!-- DEFAULT  *********works only in full screen mode*****
+                ******** ( CSS for background GUI img ) ->
+                .container{
+                    position: absolute;
+                    top: 60.5%;
+                    left: 43.3%;
+                    transform: translate(-50%, -50%);
+                    transform: scale(0.6); /* Reduces the size of the container by 80% */
+                    transform-origin: top left; /* Set the scaling origin to the top-left corner */
+                }               
+                ********
+            -->
+        </div>
+
+        
+        <div class="container">
+            <div class="bg circle"></div>
+            <div class="outermost circle"></div>
+            <div class="outer circle"></div>
+            <div class="middle circle"></div>
+            <div class="middle2 circle"></div>
+            <div class="middle3 circle"></div>
+            <div class="inner circle"></div>
+            <div class="innermost3 circle"></div>
+            <div class="innermost2 circle"></div>
+            <div class="innermost circle"></div> 
+        </div>
+    </div>
+</body>
+</html>

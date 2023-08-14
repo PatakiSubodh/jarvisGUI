@@ -1,0 +1,171 @@
+/* my animation */
+*{
+    box-sizing: border-box;
+}
+#overlay {
+    background: #000000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+/*
+-- used instead of font (see below )-- 
+this has the CSS styles for the JARVIS img
+ */
+.imgJARVIS{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    /* aspect-ratio: 3/2;   */      /* makes all the object of same size */
+    /* object-fit: contain; */      /* align vertically and fits all images perfectly */
+    mix-blend-mode: color-burn;     /* punch out or removes the white background of images(if there was any background) */
+    transform: translate(-50%, -50%);
+}
+/*
+-- used instead of the image --
+this has the font family UBUNTU & KANIT
+ */
+.textOutlineFont{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    top: 92px;
+    left: 170px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke:2px #ffffff;
+    font-size: 150px; 
+}
+.container{
+    position: absolute;
+    top: 60.5%;
+    left: 43.3%;
+    transform: translate(-50%, -50%);
+    transform: scale(0.6); /* Reduces the size of the container by 80% */
+    transform-origin: top left; /* Set the scaling origin to the top-left corner */
+}
+.circle {
+    border-radius: 50%;
+}
+.bg {
+    width: 300px;
+    height: 300px;
+    background: #000;
+    border: solid 5px #0088ff;
+}
+.outermost {
+    width: 255px;
+    height: 255px;
+    border: solid 10px rgba(0, 0, 0, 0);
+    border-top: solid 10px #0088ff;
+    border-right: solid 10px #0088ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 5s linear infinite;
+}
+.outer {
+    width: 250px;
+    height: 250px;
+    border: solid 5px #0088ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+.middle {
+    width: 215px;
+    height: 215px;
+    border: solid 12px rgba(0, 0, 0, 0);
+    border-bottom: solid 12px #005aa8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: spin2 3.5s linear infinite reverse;
+}
+.middle2 {
+    width: 215px;
+    height: 215px;
+    border: solid 6px rgba(0, 0, 0, 0);
+    border-top: solid 6px #005aa8;
+    border-right: solid 6px #005aa8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 3.5s linear infinite reverse;
+}
+.middle3 {
+    width: 205px;
+    height: 205px;
+    border: solid 30px rgba(0, 0, 0, 0);
+    border-top: solid 30px #0088ff4b;
+    border-right: solid 30px #0088ff4b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 3.5s linear infinite reverse;
+}
+.inner {
+    width: 140px;
+    height: 140px;
+    border: solid 5px #0088ff;
+    border-bottom: solid 5px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: spin2 2s linear infinite;
+}
+.innermost3 {
+    width: 35px;
+    height: 35px;
+    background: #0088ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.innermost2 {
+    width: 80px;
+    height: 80px;
+    border: solid 13px #0088ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.innermost {
+    width: 115px;
+    height: 115px;
+    border: solid 13px #0088ff;
+    border-top: solid 13px #000;
+    border-bottom: solid 13px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 1s linear infinite reverse;
+}
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+@keyframes spin2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(405deg);
+    }
+} 
